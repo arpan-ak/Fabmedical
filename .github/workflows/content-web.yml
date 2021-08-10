@@ -16,7 +16,7 @@ env:
   imageRepository: 'content-web'
   resourceGroupName: 'fabmed-AK'
   containerRegistryName: 'fabmedicalAK'
-  containerRegistry: 'fabmedicalAK.azurecr.io'
+  containerRegistry: 'fabmedicalak.azurecr.io'
   dockerfilePath: './content-web'
   tag: '${{ github.run_id  }}'
 
@@ -49,3 +49,4 @@ jobs:
         tags: |
           ${{ env.containerRegistry }}/${{ env.imageRepository }}:${{ env.tag }}
           ${{ env.containerRegistry }}/${{ env.imageRepository }}:latest
+
